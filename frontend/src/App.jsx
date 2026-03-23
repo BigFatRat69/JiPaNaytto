@@ -1,4 +1,7 @@
 import HomePage from './components/homePage'
+import Employees from './components/employees'
+import Projects from './components/projects'
+import Contact from './components/contact'
 import { Routes, Route, Link } from 'react-router-dom'
 
 function App() {
