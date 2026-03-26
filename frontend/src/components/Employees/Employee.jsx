@@ -1,11 +1,9 @@
-const Employee = ({ employee }) => {
+export default function Employee({ emp }) {
 	return (
 		<>
-			<h2>{employee.name}</h2>
-			<p>{employee.position}</p>
-			<p>{employee.contacts}</p>
+			<img src={emp.imageUrl} width="150" />
+			<h3>{emp.name}</h3>
+			<div>{emp.description}</div>
 		</>
 	);
-};
-
-export default Employee;
+}
