@@ -10,7 +10,9 @@ export default function Employees() {
       _id,
       name,
       description,
-      "imageUrl": photo.asset->url
+      "imageUrl": photo.asset->url,
+	  role,
+	  contacts,
     }`;
 
 		client.fetch(query).then((data) => {
