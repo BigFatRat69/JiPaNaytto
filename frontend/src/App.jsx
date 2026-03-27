@@ -1,10 +1,10 @@
-import HomePage from "./components/homePage";
+import HomePage from "./components/HomePage";
 import Employees from "./components/Employees";
-import Projects from "./components/projects";
-import Contact from "./components/contact";
+import Projects from "./components/Projects";
+import Contact from "./components/Contact";
 import { Routes, Route, Link } from "react-router-dom";
 
-function App() {
+export default function App() {
 	return (
 		<>
 			<nav>
@@ -23,5 +23,3 @@ function App() {
 		</>
 	);
 }
-
-export default App;

@@ -1,9 +1,9 @@
-export default function Project({ pro }) {
+export default function Project({ ref }) {
 	return (
 		<>
-			<img src={pro.imageUrl} width="150" />
-			<h3>{pro.name}</h3>
-			<div>{pro.description}</div>
+			<img src={ref.imageUrl} width="150" />
+			<h3>{ref.name}</h3>
+			<p>{ref.description}</p>
 		</>
 	);
 }
