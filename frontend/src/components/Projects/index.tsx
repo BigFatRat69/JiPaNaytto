@@ -3,10 +3,10 @@ import { client } from "../../sanity/client";
 import Project from "./Project";
 
 export default function Projects() {
-	const [references, setReferences] = useState([]);
+	const [projects, setProjects] = useState([]);
 
 	useEffect(() => {
-		const query = `*[_type == "reference"]{
+		const query = `*[_type == "project"]{
       _id,
       name,
       description,
@@ -14,15 +14,15 @@ export default function Projects() {
     }`;
 
 		client.fetch(query).then((data) => {
-			setReferences(data);
+			setProjects(data);
 		});
 	}, []);
 
 	return (
 		<div>
-			{references.map((ref: any) => (
-				<div key={ref._id}>
-					<Project ref={ref} />
+			{projects.map((pro: any) => (
+				<div key={pro._id}>
+					<Project pro={pro} />
 				</div>
 			))}
 		</div>
