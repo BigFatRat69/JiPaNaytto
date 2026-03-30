@@ -1,67 +1,73 @@
 import { Container, Card, Row, Col } from "react-bootstrap";
+
 export default function HomePage() {
 	return (
-		<Container className="mt-4">
-			<Card className="p-4 shadow">
-				<Card.Body>
-					<Card.Title as="h1" className="mb-3">
-						Jyväskylän Insinööripalvelu Oy
-					</Card.Title>
+		<>
+			<div className="section-light">
+				<Container>
+					<Card className="p-5 shadow-sm border-0">
+						<Card.Body className="text-center">
+							<Card.Title as="h1" className="mb-4">
+								Jyväskylän Insinööripalvelu Oy
+							</Card.Title>
 
-					<Card.Text>
-						Jipa eli Jyväskylän Insinööripalvelu Oy on vuonna 2025 
-						perustettu uusi ketterä insinööritoimisto. Jipa keskittyy 
-						yrityksen alkutaipaleella tarjoamaan asiakkailleen uudis- 
-						sekä korjauskohteiden rakennus- ja rakennesuunnittelua, 
-						sekä valvontaa ja rakennuttamista.
-					</Card.Text>
+							<Card.Text>
+								Jipa eli Jyväskylän Insinööripalvelu Oy on vuonna 2025
+								perustettu ketterä insinööritoimisto. Jipa keskittyy
+								uudis- sekä korjauskohteiden rakennus- ja
+								rakennesuunnitteluun sekä valvontaan ja rakennuttamiseen.
+							</Card.Text>
 
-					<Card.Text>
-						Tavoite on saada asiakkaille kokonaispalvelua rakentamisen 
-						konsultoinnin osalta ja täten keventää tilaajapuolen työtä 
-						hankkeissa.
-					</Card.Text>
-				</Card.Body>
-			</Card>
+							<Card.Text>
+								Tavoitteena on tarjota asiakkaille kokonaispalvelua
+								rakentamisen konsultoinnin osalta ja keventää
+								tilaajapuolen työtä hankkeissa.
+							</Card.Text>
+						</Card.Body>
+					</Card>
+				</Container>
+			</div>
 
-			<Card className="p-4 shadow">
-				<Card.Body>
-					<Card.Title as="h1" className="mb-4">
-						Palvelutarjonta
-					</Card.Title>
+			<div className="section-white">
+				<Container>
+					<h2 className="mb-4 text-center">Palvelutarjonta</h2>
 
 					<Row>
-						<Col md={6}>
-							<Card className="p-3 h-100">
+						<Col md={6} className="mb-4">
+							<Card className="service-card h-100 shadow-sm">
 								<Card.Body>
-									<Card.Title>Rakennuttaminen ja asiantuntijapalvelut</Card.Title>
-									<Card.Text>
-										Uudis- ja korjausrakennuttaminen, 
-										Projektinjohto, Työmaavalvonta, 
-										Kosteudenhallinta- ja turvallisuuskoordinaattorin 
-										tehtävät, Takuuajan tarkastukset, Rakennustyön 
-										tarkkailijan tehtävät
-									</Card.Text>
+									<Card.Title>
+										Rakennuttaminen ja asiantuntijapalvelut
+									</Card.Title>
+									<ul>
+										<li>Uudis- ja korjausrakennuttaminen</li>
+										<li>Projektinjohto</li>
+										<li>Työmaavalvonta</li>
+										<li>Kosteudenhallinta</li>
+										<li>Turvallisuuskoordinaattori</li>
+										<li>Takuuajan tarkastukset</li>
+										<li>Rakennustyön tarkkailija</li>
+									</ul>
 								</Card.Body>
 							</Card>
 						</Col>
 
-						<Col md={6}>
-							<Card className="p-3 h-100">
+						<Col md={6} className="mb-4">
+							<Card className="service-card h-100 shadow-sm">
 								<Card.Body>
 									<Card.Title>Suunnittelu</Card.Title>
-									<Card.Text>
-										Rakennesuunnittelu, Konepajasuunnittelu, 
-										Elementtisuunnittelu, Rakennesuunnitelmien 
-										kolmannen osapuolten tarkastus
-									</Card.Text>
+									<ul>
+										<li>Rakennesuunnittelu</li>
+										<li>Konepajasuunnittelu</li>
+										<li>Elementtisuunnittelu</li>
+										<li>Kolmannen osapuolen tarkastus</li>
+									</ul>
 								</Card.Body>
 							</Card>
 						</Col>
 					</Row>
-
-				</Card.Body>
-			</Card>
-		</Container>
+				</Container>
+			</div>
+		</>
 	);
 }

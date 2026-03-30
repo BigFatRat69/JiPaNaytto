@@ -1,17 +1,20 @@
-import HomePage from "./components/HomePage";
+import HomePage from "./components/homePage";
 import Employees from "./components/Employees";
 import Projects from "./components/Projects";
-import Contact from "./components/Contact";
+import Contact from "./components/contact";
+import logo from "./assets/JIPA_logo.jpg"
 import { Routes, Route, Link } from "react-router-dom";
 
-import { Navbar, Nav, Container } from "react-bootstrap";
+import { Navbar, Nav, Container, Image } from "react-bootstrap";
 
 export default function App() {
 	return (
 		<>
 			<Navbar bg="dark" variant="dark" expand="lg">
 				<Container>
-					<Navbar.Brand as={Link} to="/">JIPA</Navbar.Brand>
+					<Navbar.Brand as={Link} to="/">
+					<Image src={logo} height="40" alt="JIPA logo" />
+					</Navbar.Brand>
 					<Navbar.Toggle aria-controls="basic-navbar-nav" />
 					<Navbar.Collapse id="basic-navbar-nav">
 						<Nav className="me-auto">
