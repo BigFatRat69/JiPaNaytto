@@ -16,7 +16,6 @@ export default function Contact() {
       <Container className="py-5">
         <h1 className="mb-5 text-center text-white">Yhteystiedot</h1>
 
-        {/* Company Info */}
         <Card className="p-4 shadow-sm mb-4 border-0 contact-card">
           <Card.Body className="text-center">
             <Card.Title className="text-white">Jyväskylän Insinööripalvelu Oy</Card.Title>
@@ -28,7 +27,6 @@ export default function Contact() {
           </Card.Body>
         </Card>
 
-        {/* Billing Info */}
         <Card className="p-4 shadow-sm border-0 contact-card">
           <Card.Body className="text-center">
             <Card.Title className="text-white">Laskutus</Card.Title>
