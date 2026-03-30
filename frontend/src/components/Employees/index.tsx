@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import { client } from "../../sanity/client";
 import Employee from "./Employee";
+import { ListGroup } from "react-bootstrap";
 
 export default function Employees() {
 	const [employees, setEmployees] = useState([]);
@@ -21,12 +22,12 @@ export default function Employees() {
 	}, []);
 
 	return (
-		<div>
+		<ListGroup horizontal>
 			{employees.map((emp: any) => (
-				<div key={emp._id}>
+				<ListGroup.Item key={emp._id}>
 					<Employee emp={emp} />
-				</div>
+				</ListGroup.Item>
 			))}
-		</div>
+		</ListGroup>
 	);
 }
