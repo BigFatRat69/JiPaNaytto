@@ -18,11 +18,18 @@ export default function Contact() {
 
         <Card className="p-4 shadow-sm mb-4 border-0 contact-card">
           <Card.Body className="text-center">
-            <Card.Title className="text-white">Jyväskylän Insinööripalvelu Oy</Card.Title>
+            <Card.Title className="text-white">
+              Jyväskylän Insinööripalvelu Oy
+            </Card.Title>
             <Card.Text className="text-white">
-              <strong>Osoite:</strong> Kirrintie 11, 40270 Jyväskylä<br />
-              <strong>Sähköposti:</strong> etunimi.sukunimi@jipa.fi<br />
-              <strong>Puhelinnumerot henkilöittäin:</strong> <a href="#" className="text-white">löydät täältä</a>
+              <strong>Osoite:</strong> Kirrintie 11, 40270 Jyväskylä
+              <br />
+              <strong>Sähköposti:</strong> etunimi.sukunimi@jipa.fi
+              <br />
+              <strong>Puhelinnumerot henkilöittäin:</strong>{" "}
+              <a href="#" className="text-white">
+                löydät täältä
+              </a>
             </Card.Text>
           </Card.Body>
         </Card>
@@ -31,9 +38,12 @@ export default function Contact() {
           <Card.Body className="text-center">
             <Card.Title className="text-white">Laskutus</Card.Title>
             <Card.Text className="text-white">
-              <strong>Verkkolaskutusosoite:</strong> 003734999895<br />
-              <strong>Välittäjän nimi:</strong> Apix Messaging Oy<br />
-              <strong>Operaattoritunnus:</strong> 003723327487<br />
+              <strong>Verkkolaskutusosoite:</strong> 003734999895
+              <br />
+              <strong>Välittäjän nimi:</strong> Apix Messaging Oy
+              <br />
+              <strong>Operaattoritunnus:</strong> 003723327487
+              <br />
               <strong>Maksuehto:</strong> 30 pv tai sovittava erikseen
             </Card.Text>
           </Card.Body>

@@ -37,6 +37,7 @@
 }
 
 h1 {
+  font-family: "Helvetica Neue", Arial, sans-serif;
   font-weight: 600;
   margin-bottom: 40px;
 }
@@ -47,7 +48,13 @@ h2 {
   text-align: center;
 }
 
+h4 {
+  font-weight: 400;
+  margin-bottom: 20px;
+}
+
 p {
+  color: #444;
   font-size: 1.05rem;
   line-height: 1.6;
 }
@@ -58,4 +65,14 @@ ul {
 
 li {
   margin-bottom: 6px;
+}
+
+a {
+  text-decoration: none;
+  border-bottom: 1px solid black;
+  color: black;
+}
+
+a:hover {
+  opacity: 0.6;
 }
