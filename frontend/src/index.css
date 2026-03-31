@@ -15,11 +15,6 @@
   transition: transform 0.2s, box-shadow 0.2s;
 }
 
-.card:hover {
-  transform: translateY(-3px);
-  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-}
-
 .service-card {
   border: none;
   border-radius: 12px;
@@ -28,22 +23,12 @@
   box-shadow: 0 2px 6px rgba(0,0,0,0.08);
 }
 
-.service-card:hover {
-  transform: translateY(-3px);
-  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-}
-
 .contact-card {
   background-color: rgba(0, 0, 0, 0.5);
   color: #ffffff;
   border-radius: 12px;
   box-shadow: 0 2px 6px rgba(0,0,0,0.08);
   transition: transform 0.2s, box-shadow 0.2s;
-}
-
-.contact-card:hover {
-  transform: translateY(-3px);
-  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
 }
 
 .contact-card a {
