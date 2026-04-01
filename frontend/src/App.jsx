@@ -1,7 +1,7 @@
 import HomePage from "./components/HomePage";
 import Employees from "./components/Employees";
 import Projects from "./components/Projects";
-import Contact from "./components/contact";
+import Contact from "./components/Contact";
 import logo from "./assets/JIPA_logo.jpg";
 import { Routes, Route, NavLink } from "react-router-dom";
 
