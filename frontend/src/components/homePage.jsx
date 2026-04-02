@@ -1,27 +1,27 @@
 import { Container, Card, Row, Col } from "react-bootstrap";
 
 export default function HomePage() {
+	const fontColor = { color: "#8042D1" };
+
 	return (
 		<>
 			<div className="section-light">
 				<Container>
 					<Card className="p-5 shadow-sm border-0">
 						<Card.Body className="text-center">
-							<Card.Title as="h1" className="mb-4">
+							<Card.Title as="h1" className="mb-4" style={fontColor}>
 								Jyväskylän Insinööripalvelu Oy
 							</Card.Title>
 
-							<Card.Text>
-								Jipa eli Jyväskylän Insinööripalvelu Oy on vuonna 2025
-								perustettu ketterä insinööritoimisto. Jipa keskittyy
-								uudis- sekä korjauskohteiden rakennus- ja
-								rakennesuunnitteluun sekä valvontaan ja rakennuttamiseen.
+							<Card.Text style={fontColor}>
+								Jipa eli Jyväskylän Insinööripalvelu Oy on vuonna 2025 perustettu
+								ketterä insinööritoimisto. Jipa keskittyy uudis- sekä korjauskohteiden
+								rakennus- ja rakennesuunnitteluun sekä valvontaan ja rakennuttamiseen.
 							</Card.Text>
 
-							<Card.Text>
-								Tavoitteena on tarjota asiakkaille kokonaispalvelua
-								rakentamisen konsultoinnin osalta ja keventää
-								tilaajapuolen työtä hankkeissa.
+							<Card.Text style={fontColor}>
+								Tavoitteena on tarjota asiakkaille kokonaispalvelua rakentamisen
+								konsultoinnin osalta ja keventää tilaajapuolen työtä hankkeissa.
 							</Card.Text>
 						</Card.Body>
 					</Card>
@@ -30,16 +30,18 @@ export default function HomePage() {
 
 			<div className="section-white">
 				<Container>
-					<h2 className="mb-4 text-center">Palvelutarjonta</h2>
+					<h2 className="mb-4 text-center" style={fontColor}>
+						Palvelutarjonta
+					</h2>
 
 					<Row>
 						<Col md={6} className="mb-4">
 							<Card className="service-card h-100 shadow-sm">
 								<Card.Body>
-									<Card.Title>
+									<Card.Title style={fontColor}>
 										Rakennuttaminen ja asiantuntijapalvelut
 									</Card.Title>
-									<ul>
+									<ul style={fontColor}>
 										<li>Uudis- ja korjausrakennuttaminen</li>
 										<li>Projektinjohto</li>
 										<li>Työmaavalvonta</li>
@@ -55,8 +57,8 @@ export default function HomePage() {
 						<Col md={6} className="mb-4">
 							<Card className="service-card h-100 shadow-sm">
 								<Card.Body>
-									<Card.Title>Suunnittelu</Card.Title>
-									<ul>
+									<Card.Title style={fontColor}>Suunnittelu</Card.Title>
+									<ul style={fontColor}>
 										<li>Rakennesuunnittelu</li>
 										<li>Konepajasuunnittelu</li>
 										<li>Elementtisuunnittelu</li>

@@ -23,13 +23,9 @@ export default function Employee({ emp }) {
 					<Card.Text>{emp.description}</Card.Text>
 				</Card.Body>
 				<ListGroup className="list-group-flush">
-					<ListGroup.Item variant="secondary">{emp.role}</ListGroup.Item>
-					<ListGroup.Item variant="secondary">
-						{emp.contacts[0].phone}
-					</ListGroup.Item>
-					<ListGroup.Item variant="secondary">
-						{emp.contacts[0].email}
-					</ListGroup.Item>
+					<ListGroup.Item variant="light">{emp.role}</ListGroup.Item>
+					<ListGroup.Item variant="light">{emp.contacts[0].phone}</ListGroup.Item>
+					<ListGroup.Item variant="light">{emp.contacts[0].email}</ListGroup.Item>
 				</ListGroup>
 			</Card>
 		</>
