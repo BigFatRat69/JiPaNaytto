@@ -7,6 +7,7 @@ import { Routes, Route, NavLink } from "react-router-dom";
 
 import { Navbar, Nav, Container, Image } from "react-bootstrap";
 import Footer from "./components/Footer";
+import "./App.css";
 
 export default function App() {
 	const fontColor = { color: "#8042D1" };
@@ -15,7 +16,7 @@ export default function App() {
 		<>
 			<Navbar bg="light" expand="lg" sticky="top">
 				<Container>
-					<Navbar.Brand as={NavLink} to="/">
+					<Navbar.Brand as={NavLink} to="/" className="brand-logo">
 						<Image src={logo} height="40" alt="JIPA logo" />
 					</Navbar.Brand>
 					<Navbar.Toggle aria-controls="basic-navbar-nav" />
