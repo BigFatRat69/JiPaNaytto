@@ -1,36 +1,34 @@
-import { Container, Stack, Row, Col, Image } from "react-bootstrap";
+import { Container, Row, Col, Stack, Image } from "react-bootstrap";
 import logo from "../assets/JIPA_logo.jpg";
 
 export default function Footer() {
 	const fontColor = { color: "#8042D1" };
 
 	return (
-		<footer>
-			<Container
-				fluid
-				style={{
-					borderTop: "1px solid lightgray",
-					padding: 40,
-				}}
-			>
-				<Row>
-					<Col xs={8}>
+		<footer style={{ backgroundColor: "#f8f9fa", marginTop: 80 }}>
+			<Container fluid style={{ padding: 30, borderTop: "1px solid #cacaca" }}>
+				<Row className="mb-4">
+					<Col md={4}>
 						<Stack gap={3}>
-							<h3 style={fontColor}>Jyväskylän Insinööripalvelu Oy</h3>
-							<div>y-tunnus: 103i19898</div>
+							<Image src={logo} style={{ width: 180 }} />
+							<h4 style={fontColor}>Jyväskylän Insinööripalvelu Oy</h4>
+							<div>Y-tunnus: 10319898</div>
+							<div>Engineering services and consulting</div>
 						</Stack>
 					</Col>
-					<Col xs={2}>
+					<Col md={3}>
 						<Stack gap={2}>
-							<h3 style={fontColor}>Osoite</h3>
+							<h5 style={fontColor}>Osoite</h5>
 							<div>Kirrintie 11</div>
 							<div>40270 Jyväskylä</div>
+							<div>Suomi</div>
 						</Stack>
 					</Col>
-					<Col xs={2}>
-						<Stack gap={3}>
-							<h3 style={fontColor}>Sähköposti</h3>
+					<Col md={3}>
+						<Stack gap={2}>
+							<h5 style={fontColor}>Yhteystiedot</h5>
 							<div>etunimi.sukunimi@jipa.fi</div>
+							<div>+358 40 123 4567</div>
 						</Stack>
 					</Col>
 				</Row>

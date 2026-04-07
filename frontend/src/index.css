@@ -1,3 +1,7 @@
+* {
+  font-family: "Helvetica Neue", Arial, sans-serif;
+}
+
 .section-light {
   background-color: #f8f9fa;
   padding: 100px 0;
@@ -34,6 +38,10 @@
 .contact-card a {
   color: #ffffff;
   text-decoration: underline;
+}
+
+div {
+  font-size: 20px
 }
 
 h1 {
