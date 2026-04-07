@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 .counter {
   font-size: 16px;
   padding: 5px 10px;
@@ -181,4 +182,9 @@
     right: 0;
     border-right-color: var(--border);
   }
+=======
+.brand-logo {
+	border-bottom: none !important;
+	box-shadow: none !important;
+>>>>>>> b15c55820953e9d104dbbf43e71de7f3f4ab32b8
 }

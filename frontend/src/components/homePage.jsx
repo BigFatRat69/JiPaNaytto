@@ -13,13 +13,13 @@ export default function HomePage() {
 								Jyväskylän Insinööripalvelu Oy
 							</Card.Title>
 
-							<Card.Text style={fontColor}>
+							<Card.Text>
 								Jipa eli Jyväskylän Insinööripalvelu Oy on vuonna 2025 perustettu
 								ketterä insinööritoimisto. Jipa keskittyy uudis- sekä korjauskohteiden
 								rakennus- ja rakennesuunnitteluun sekä valvontaan ja rakennuttamiseen.
 							</Card.Text>
 
-							<Card.Text style={fontColor}>
+							<Card.Text>
 								Tavoitteena on tarjota asiakkaille kokonaispalvelua rakentamisen
 								konsultoinnin osalta ja keventää tilaajapuolen työtä hankkeissa.
 							</Card.Text>
@@ -41,7 +41,7 @@ export default function HomePage() {
 									<Card.Title style={fontColor}>
 										Rakennuttaminen ja asiantuntijapalvelut
 									</Card.Title>
-									<ul style={fontColor}>
+									<ul>
 										<li>Uudis- ja korjausrakennuttaminen</li>
 										<li>Projektinjohto</li>
 										<li>Työmaavalvonta</li>
@@ -58,7 +58,7 @@ export default function HomePage() {
 							<Card className="service-card h-100 shadow-sm">
 								<Card.Body>
 									<Card.Title style={fontColor}>Suunnittelu</Card.Title>
-									<ul style={fontColor}>
+									<ul>
 										<li>Rakennesuunnittelu</li>
 										<li>Konepajasuunnittelu</li>
 										<li>Elementtisuunnittelu</li>
