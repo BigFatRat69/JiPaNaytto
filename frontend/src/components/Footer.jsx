@@ -8,15 +8,15 @@ export default function Footer() {
 		<footer style={{ backgroundColor: "#f8f9fa", marginTop: 80 }}>
 			<Container fluid style={{ padding: 30, borderTop: "1px solid #cacaca" }}>
 				<Row className="mb-4">
-					<Col md={4}>
+					<Col md={8}>
 						<Stack gap={3}>
 							<Image src={logo} style={{ width: 180 }} />
 							<h4 style={fontColor}>Jyväskylän Insinööripalvelu Oy</h4>
-							<div>Y-tunnus: 10319898</div>
+							<div>Y-tunnus: 3499989-5</div>
 							<div>Engineering services and consulting</div>
 						</Stack>
 					</Col>
-					<Col md={3}>
+					<Col md={2}>
 						<Stack gap={2}>
 							<h5 style={fontColor}>Osoite</h5>
 							<div>Kirrintie 11</div>
@@ -24,11 +24,10 @@ export default function Footer() {
 							<div>Suomi</div>
 						</Stack>
 					</Col>
-					<Col md={3}>
+					<Col md={2}>
 						<Stack gap={2}>
 							<h5 style={fontColor}>Yhteystiedot</h5>
 							<div>etunimi.sukunimi@jipa.fi</div>
-							<div>+358 40 123 4567</div>
 						</Stack>
 					</Col>
 				</Row>
