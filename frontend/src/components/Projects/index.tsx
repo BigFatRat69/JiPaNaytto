@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import { client } from "../../sanity/client";
 import Project from "./Project";
-import { Carousel, Container } from "react-bootstrap";
+import { Container, ListGroup } from "react-bootstrap";
 
 export default function Projects() {
 	const [projects, setProjects] = useState([]);
@@ -21,13 +21,13 @@ export default function Projects() {
 
 	return (
 		<Container>
-			<Carousel data-bs-theme="dark" controls={false} touch>
+			<ListGroup horizontal="md">
 				{projects.map((pro: any) => (
-					<Carousel.Item key={pro._id} interval={10000}>
-						<Project pro={pro} />
-					</Carousel.Item>
+					<ListGroup.Item key={pro.id_} className="border-0">
+						<Project pro={pro}/>
+					</ListGroup.Item>
 				))}
-			</Carousel>
+			</ListGroup>
 		</Container>
 	);
 }

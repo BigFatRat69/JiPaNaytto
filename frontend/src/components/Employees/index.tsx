@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import { client } from "../../sanity/client";
 import Employee from "./Employee";
-import { Container, ListGroup } from "react-bootstrap";
+import { Container, Col, Row } from "react-bootstrap";
 
 export default function Employees() {
 	const [employees, setEmployees] = useState([]);
@@ -23,13 +23,13 @@ export default function Employees() {
 
 	return (
 		<Container>
-			<ListGroup horizontal="md">
+			<Row>
 				{employees.map((emp: any) => (
-					<ListGroup.Item key={emp._id}>
+					<Col key={emp._id} xs={12} md={6} lg={4} className="mb-4">
 						<Employee emp={emp} />
-					</ListGroup.Item>
+					</Col>
 				))}
-			</ListGroup>
+			</Row>
 		</Container>
 	);
 }
