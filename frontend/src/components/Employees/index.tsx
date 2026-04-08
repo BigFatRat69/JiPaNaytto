@@ -23,7 +23,10 @@ export default function Employees() {
 
 	return (
 		<Container>
-			<ListGroup horizontal="md">
+			<ListGroup
+				horizontal="md"
+				style={{ flexWrap: "wrap", gap: 50, justifyContent: "center" }}
+			>
 				{employees.map((emp: any) => (
 					<ListGroup.Item key={emp._id}>
 						<Employee emp={emp} />

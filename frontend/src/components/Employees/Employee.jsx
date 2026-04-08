@@ -4,12 +4,12 @@ import ListGroup from "react-bootstrap/ListGroup";
 export default function Employee({ emp }) {
 	return (
 		<>
-			<Card style={{ width: "18rem" }}>
+			<Card style={{ width: "20rem" }}>
 				<Card.Img
 					variant="top"
 					src={emp.imageUrl}
 					style={{
-						width: "18rem",
+						width: "20rem",
 						height: "13rem",
 						objectFit: "contain",
 						paddingLeft: 1,
