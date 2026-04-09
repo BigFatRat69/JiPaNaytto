@@ -21,10 +21,10 @@ export default function Projects() {
 
 	return (
 		<Container>
-			<ListGroup horizontal="md">
+			<ListGroup>
 				{projects.map((pro: any) => (
 					<ListGroup.Item key={pro.id_} className="border-0">
-						<Project pro={pro}/>
+						<Project pro={pro} />
 					</ListGroup.Item>
 				))}
 			</ListGroup>
