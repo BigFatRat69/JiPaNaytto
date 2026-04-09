@@ -13,7 +13,6 @@ export default function Footer() {
 							<Image src={logo} style={{ width: 180 }} />
 							<h4 style={fontColor}>Jyväskylän Insinööripalvelu Oy</h4>
 							<div>Y-tunnus: 3499989-5</div>
-							<div>Engineering services and consulting</div>
 						</Stack>
 					</Col>
 					<Col md={2}>

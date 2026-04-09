@@ -19,14 +19,14 @@ export default function Employee({ emp }) {
 					}}
 				/>
 				<Card.Body>
-					<Card.Title variant="">{emp.name}</Card.Title>
-					<Card.Text>{emp.description}</Card.Text>
+					<Card.Title variant="" style={{fontSize:"25px"}}>{emp.name}</Card.Title>					
 				</Card.Body>
 				<ListGroup className="list-group-flush">
-					<ListGroup.Item variant="light">{emp.role}</ListGroup.Item>
-					<ListGroup.Item variant="light">{emp.contacts[0].phone}</ListGroup.Item>
-					<ListGroup.Item variant="light">{emp.contacts[0].email}</ListGroup.Item>
+					<ListGroup.Item style={{fontSize:"15px"}} variant="light">{emp.role}</ListGroup.Item>
+					<ListGroup.Item style={{fontSize:"15px"}} variant="light">{emp.contacts[0].phone}</ListGroup.Item>
+					<ListGroup.Item style={{fontSize:"15px"}} variant="light">{emp.contacts[0].email}</ListGroup.Item>
 				</ListGroup>
+					<Card.Text style={{fontSize:"20px"}}>{emp.description}</Card.Text>
 			</Card>
 		</>
 	);

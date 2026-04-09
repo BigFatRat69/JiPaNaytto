@@ -25,7 +25,7 @@ export default function Employees() {
 		<Container>
 			<Row>
 				{employees.map((emp: any) => (
-					<Col key={emp._id} xs={12} md={6} lg={4} className="mb-4">
+					<Col key={emp._id} xs={12} md={6} lg={4} className="mb-4 p-2">
 						<Employee emp={emp} />
 					</Col>
 				))}
