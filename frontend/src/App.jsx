@@ -21,16 +21,16 @@ export default function App() {
 					<Navbar.Toggle aria-controls="basic-navbar-nav" />
 					<Navbar.Collapse id="basic-navbar-nav">
 						<Nav className="me-auto" variant="underline">
-							<Nav.Link as={NavLink} to="/" style={fontColor}>
+							<Nav.Link as={NavLink} to="/" className="purple-font">
 								Etusivu
 							</Nav.Link>
-							<Nav.Link as={NavLink} to="/employees" style={fontColor}>
+							<Nav.Link as={NavLink} to="/employees" className="purple-font">
 								Henkilöt
 							</Nav.Link>
-							<Nav.Link as={NavLink} to="/projects" style={fontColor}>
+							<Nav.Link as={NavLink} to="/projects" className="purple-font">
 								Projektit
 							</Nav.Link>
-							<Nav.Link as={NavLink} to="/contact" style={fontColor}>
+							<Nav.Link as={NavLink} to="/contact" className="purple-font">
 								Yhteystiedot
 							</Nav.Link>
 						</Nav>

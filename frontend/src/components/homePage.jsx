@@ -1,15 +1,13 @@
 import { Container, Card, Row, Col } from "react-bootstrap";
 
 export default function HomePage() {
-	const fontColor = { color: "#8042D1" };
-
 	return (
 		<>
 			<div className="section-light">
 				<Container>
 					<Card className="p-5 shadow-sm border-0">
 						<Card.Body className="text-center">
-							<Card.Title as="h1" className="mb-4" style={fontColor}>
+							<Card.Title as="h1" className="mb-4 purple-font">
 								Jyväskylän Insinööripalvelu Oy
 							</Card.Title>
 
@@ -30,15 +28,13 @@ export default function HomePage() {
 
 			<div className="section-white">
 				<Container>
-					<h2 className="mb-4 text-center" style={fontColor}>
-						Palvelutarjonta
-					</h2>
+					<h2 className="mb-4 text-center purple-font">Palvelutarjonta</h2>
 
 					<Row>
 						<Col md={6} className="mb-4">
 							<Card className="service-card h-100 shadow-sm">
 								<Card.Body>
-									<Card.Title style={fontColor}>
+									<Card.Title className="purple-font">
 										Rakennuttaminen ja asiantuntijapalvelut
 									</Card.Title>
 									<ul>
@@ -57,7 +53,7 @@ export default function HomePage() {
 						<Col md={6} className="mb-4">
 							<Card className="service-card h-100 shadow-sm">
 								<Card.Body>
-									<Card.Title style={fontColor}>Suunnittelu</Card.Title>
+									<Card.Title className="purple-font">Suunnittelu</Card.Title>
 									<ul>
 										<li>Rakennesuunnittelu</li>
 										<li>Konepajasuunnittelu</li>

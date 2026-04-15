@@ -2,8 +2,6 @@ import { Container, Row, Col, Stack, Image } from "react-bootstrap";
 import logo from "../assets/JIPA_logo.jpg";
 
 export default function Footer() {
-	const fontColor = { color: "#8042D1" };
-
 	return (
 		<footer style={{ backgroundColor: "#f8f9fa", marginTop: 80 }}>
 			<Container fluid style={{ padding: 30, borderTop: "1px solid #cacaca" }}>
@@ -11,13 +9,13 @@ export default function Footer() {
 					<Col md={7}>
 						<Stack gap={3}>
 							<Image src={logo} style={{ width: 180 }} />
-							<h4 style={fontColor}>Jyväskylän Insinööripalvelu Oy</h4>
+							<h4 className="purple-font">Jyväskylän Insinööripalvelu Oy</h4>
 							<div>Y-tunnus: 3499989-5</div>
 						</Stack>
 					</Col>
 					<Col md={2}>
 						<Stack gap={2}>
-							<h5 style={fontColor}>Osoite</h5>
+							<h5 className="purple-font">Osoite</h5>
 							<div>Kirrintie 11</div>
 							<div>40270 Jyväskylä</div>
 							<div>Suomi</div>
@@ -25,7 +23,7 @@ export default function Footer() {
 					</Col>
 					<Col md={2}>
 						<Stack gap={2}>
-							<h5 style={fontColor}>Yhteystiedot</h5>
+							<h5 className="purple-font">Yhteystiedot</h5>
 							<div>etunimi.sukunimi@jipa.fi</div>
 						</Stack>
 					</Col>
