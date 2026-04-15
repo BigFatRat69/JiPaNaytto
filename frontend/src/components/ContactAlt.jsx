@@ -23,7 +23,9 @@ export default function Contact() {
 				</h1>
 			</div>
 
-			<div style={{ backgroundColor: "white", padding: "80px 0" }}>
+			<div
+				style={{ backgroundColor: "white", padding: "80px 0", color: "#8042D1" }}
+			>
 				<Container>
 					<Row>
 						<Col md={6}>

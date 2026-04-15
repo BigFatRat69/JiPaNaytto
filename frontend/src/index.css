@@ -1,5 +1,5 @@
 * {
-  font-family: "Helvetica Neue", Arial, sans-serif;
+	font-family: "Helvetica Neue", Arial, sans-serif;
 }
 
 .brand-logo {
@@ -9,40 +9,46 @@
 
 
 .section-light {
-  background-color: #f8f9fa;
-  padding: 100px 0;
-  position: relative;
+	background-color: #f8f9fa;
+	padding: 100px 0;
+	position: relative;
 }
 
 .section-white {
-  background-color: #ffffff;
-  padding: 100px 0;
+	background-color: #ffffff;
+	padding: 100px 0;
 }
 
 .card {
-  border: none;
-  transition: transform 0.2s, box-shadow 0.2s;
+	border: none;
+	transition:
+		transform 0.2s,
+		box-shadow 0.2s;
 }
 
 .service-card {
-  border: none;
-  padding: 15px;
-  transition: transform 0.2s, box-shadow 0.2s;
+	border: none;
+	padding: 15px;
+	transition:
+		transform 0.2s,
+		box-shadow 0.2s;
 }
 
 .contact-card {
-  background-color: rgba(0, 0, 0, 0.5);
-  color: #ffffff;;
-  transition: transform 0.2s, box-shadow 0.2s;
+	background-color: rgba(0, 0, 0, 0.5);
+	color: #ffffff;
+	transition:
+		transform 0.2s,
+		box-shadow 0.2s;
 }
 
 .contact-card a {
-  color: #ffffff;
-  text-decoration: underline;
+	color: #ffffff;
+	text-decoration: underline;
 }
 
 .list-group {
-  border: none;
+	border: none;
 }
 
 
@@ -100,46 +106,46 @@
 }
 
 div {
-  font-size: 20px
+	font-size: 20px;
 }
 
 h1 {
-  font-family: "Helvetica Neue", Arial, sans-serif;
-  font-weight: 600;
-  margin-bottom: 40px;
+	font-family: "Helvetica Neue", Arial, sans-serif;
+	font-weight: 600;
+	margin-bottom: 40px;
 }
 
 h2 {
-  font-weight: 500;
-  margin-bottom: 30px;
-  text-align: center;
+	font-weight: 500;
+	margin-bottom: 30px;
+	text-align: center;
 }
 
 h4 {
-  font-weight: 400;
-  margin-bottom: 20px;
+	font-weight: 400;
+	margin-bottom: 20px;
 }
 
 p {
-  color: #444;
-  font-size: 1.05rem;
-  line-height: 1.6;
+	color: #212529;
+	font-size: 1.05rem;
+	line-height: 1.6;
 }
 
 ul {
-  padding-left: 18px;
+	padding-left: 18px;
 }
 
 li {
-  margin-bottom: 6px;
+	margin-bottom: 6px;
 }
 
 a {
-  text-decoration: none;
-  border-bottom: 1px solid black;
-  color: black;
+	text-decoration: none;
+	border-bottom: 1px solid black;
+	color: black;
 }
 
 a:hover {
-  opacity: 0.6;
+	opacity: 0.6;
 }
