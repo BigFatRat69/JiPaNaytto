@@ -8,7 +8,7 @@ export default function Footer() {
 		<footer style={{ backgroundColor: "#f8f9fa", marginTop: 80 }}>
 			<Container fluid style={{ padding: 30, borderTop: "1px solid #cacaca" }}>
 				<Row className="mb-4">
-					<Col md={8}>
+					<Col md={7}>
 						<Stack gap={3}>
 							<Image src={logo} style={{ width: 180 }} />
 							<h4 style={fontColor}>Jyväskylän Insinööripalvelu Oy</h4>

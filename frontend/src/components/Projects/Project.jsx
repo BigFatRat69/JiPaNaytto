@@ -1,71 +1,59 @@
-import { useState } from "react";
-import { Container, Card, Modal, Button } from "react-bootstrap";
+﻿import { useState } from "react";
+import { Card, Modal, Button } from "react-bootstrap";
 
 export default function Project({ pro }) {
-	const [show, setShow] = useState(false);
+    const [show, setShow] = useState(false);
 
-	return (
-		<>
-			<Container className="my-3 d-flex justify-content-center">
-				<Card
-					style={{ width: "20rem", cursor: "pointer" }}
-					onClick={() => setShow(true)}
-				>
-					<Card.Img
-						variant="top"
-						src={pro.imageUrl}
-						style={{
-							height: "200px",
-							objectFit: "contain",
-							padding: "0.5rem",
-						}}
-					/>
+    const handleClose = () => setShow(false);
+    const handleShow = () => setShow(true);
 
-					<Card.Body>
-						<Card.Title className="fw-bold">
-							{pro.name}
-						</Card.Title>
+    return (
+        <>
+            <Card className="h-100 shadow-sm border-0 project-card" onClick={handleShow}>
+                <Card.Img
+                    variant="top"
+                    src={pro.imageUrl}
+                    alt={pro.name}
+                    loading="lazy"
+                    className="project-card-image"
+                />
 
-						<Card.Text
-							className="text-muted"
-							style={{
-								display: "-webkit-box",
-								WebkitLineClamp: 3,
-								WebkitBoxOrient: "vertical",
-								overflow: "hidden",
-							}}
-						>
-							{pro.description}
-						</Card.Text>
-					</Card.Body>
-				</Card>
-			</Container>
+                <Card.Body className="d-flex flex-column">
+                    <Card.Title className="fw-bold project-card-title">
+                        {pro.name}
+                    </Card.Title>
 
-			<Modal show={show} onClick={() => setShow(false)} centered animation={false}>
-				<Modal.Header closeButton>
-					<Modal.Title>{pro.name}</Modal.Title>
-				</Modal.Header>
+                    <Card.Text className="text-secondary project-card-description flex-grow-1">
+                        {pro.description}
+                    </Card.Text>
 
-				<Modal.Body>
-					<img
-						src={pro.imageUrl}
-						alt={pro.name}
-						style={{
-							width: "100%",
-							marginBottom: "1rem",
-							objectFit: "contain",
-						}}
-					/>
+                    <div className="mt-3 text-primary project-card-action">
+                        Lisätietoja
+                    </div>
+                </Card.Body>
+            </Card>
 
-					<p>{pro.description}</p>
-				</Modal.Body>
+            <Modal show={show} onHide={handleClose} centered animation={false} size="lg">
+                <Modal.Header closeButton>
+                    <Modal.Title>{pro.name}</Modal.Title>
+                </Modal.Header>
 
-				<Modal.Footer>
-					<Button variant="secondary" onClick={() => setShow(false)}>
-						Close
-					</Button>
-				</Modal.Footer>
-			</Modal>
-		</>
-	);
+                <Modal.Body className="project-modal-body">
+                    <img
+                        src={pro.imageUrl}
+                        alt={pro.name}
+                        className="project-modal-image"
+                    />
+
+                    <p>{pro.description}</p>
+                </Modal.Body>
+
+                <Modal.Footer className="project-modal-footer">
+                    <Button variant="secondary" onClick={handleClose}>
+                        Sulje
+                    </Button>
+                </Modal.Footer>
+            </Modal>
+        </>
+    );
 }
