@@ -2,6 +2,24 @@
 	font-family: "Helvetica Neue", Arial, sans-serif;
 }
 
+.card-text-small {
+	font-size: 15px;
+}
+
+.card-text-large {
+	font-size: 20px;
+}
+
+.employee-card-image {
+	width: 20rem;
+	height: 13rem;
+	object-fit: contain;
+	padding-left: 1px;
+	padding-right: 3px;
+	padding-top: 1px;
+	padding-bottom: 1px;
+}
+
 .brand-logo {
 	border-bottom: none !important;
 	box-shadow: none !important;
