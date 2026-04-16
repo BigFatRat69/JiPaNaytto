@@ -25,7 +25,6 @@
 	box-shadow: none !important;
 }
 
-
 .section-light {
 	background-color: #f8f9fa;
 	padding: 100px 0;
@@ -69,12 +68,13 @@
 	border: none;
 }
 
-
 .project-card {
 	cursor: pointer;
 	border-radius: 1rem;
 	overflow: hidden;
-	transition: transform 0.25s ease, box-shadow 0.25s ease;
+	transition:
+		transform 0.25s ease,
+		box-shadow 0.25s ease;
 }
 
 .project-card:hover {
@@ -95,7 +95,7 @@
 .project-card-description {
 	display: -webkit-box;
 	-webkit-line-clamp: 3;
-  line-clamp: 3;
+	line-clamp: 3;
 	-webkit-box-orient: vertical;
 	overflow: hidden;
 }
@@ -167,4 +167,8 @@ a {
 
 a:hover {
 	opacity: 0.6;
+}
+
+.purple-font {
+	color: #8042d1 !important;
 }
