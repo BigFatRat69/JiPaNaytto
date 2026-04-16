@@ -2,6 +2,17 @@
 	font-family: "Helvetica Neue", Arial, sans-serif;
 }
 
+.contact-bg-div {
+	background-attachment: fixed;
+	background-size: cover;
+	background-position: center;
+	height: 300px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	color: white;
+}
+
 .card-text-small {
 	font-size: 15px;
 }

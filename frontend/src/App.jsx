@@ -1,7 +1,7 @@
 import HomePage from "./components/HomePage";
 import Employees from "./components/Employees";
 import Projects from "./components/Projects";
-import Contact from "./components/ContactAlt";
+import Contact from "./components/Contact";
 import logo from "./assets/JIPA_logo.jpg";
 import { Routes, Route, NavLink } from "react-router-dom";
 
@@ -9,7 +9,6 @@ import { Navbar, Nav, Container, Image } from "react-bootstrap";
 import Footer from "./components/Footer";
 
 export default function App() {
-	const fontColor = { color: "#8042D1" };
 
 	return (
 		<>
