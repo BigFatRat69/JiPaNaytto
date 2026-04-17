@@ -11,13 +11,13 @@ export default function HomePage() {
 								Jyväskylän Insinööripalvelu Oy
 							</Card.Title>
 
-							<Card.Text>
+							<Card.Text className="card-text-large">
 								Jipa eli Jyväskylän Insinööripalvelu Oy on vuonna 2025 perustettu
 								ketterä insinööritoimisto. Jipa keskittyy uudis- sekä korjauskohteiden
 								rakennus- ja rakennesuunnitteluun sekä valvontaan ja rakennuttamiseen.
 							</Card.Text>
 
-							<Card.Text>
+							<Card.Text className="card-text-large">
 								Tavoitteena on tarjota asiakkaille kokonaispalvelua rakentamisen
 								konsultoinnin osalta ja keventää tilaajapuolen työtä hankkeissa.
 							</Card.Text>

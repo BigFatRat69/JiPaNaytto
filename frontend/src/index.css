@@ -183,3 +183,10 @@ a:hover {
 .purple-font {
 	color: #8042d1 !important;
 }
+
+.employees-title-container {
+	padding-left: 1rem;
+	padding-right: 1rem;
+	padding-top: 4rem;
+	padding-bottom: 10rem;
+}
