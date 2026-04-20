@@ -1,73 +1,79 @@
-import { Container, Row, Col } from "react-bootstrap";
-import backgroundImage from "../assets/contact-bg.jpg";
+import { Container, Row, Col, Card } from "react-bootstrap";
 import { Link } from "react-router-dom";
+import { FaMapMarkerAlt, FaEnvelope, FaPhone, FaFileInvoice } from "react-icons/fa";
+import backgroundImage from "../assets/JIPA_Yhteiskuva.jpg";
 
 export default function Contact() {
-	return (
-		<div>
-			<div className="contact-bg-div"
-				style={{
-					backgroundImage: `url(${backgroundImage})`
-				}}
-			>
-				<h1 style={{ fontSize: "48px", fontWeight: "300", letterSpacing: "3px" }}>
-					Yhteystiedot
-				</h1>
-			</div>
+  return (
+    <div>
+      <div style={{ textAlign: "center", padding: "60px 0 20px 0" }}>
+        <h1 className="contact-title purple-font">Yhteystiedot</h1>
+      </div>
 
-			<div
-				style={{ backgroundColor: "white", padding: "80px 0", color: "#8042D1" }}
-			>
-				<Container>
-					<Row>
-						<Col md={6}>
-							<h4 style={{ fontWeight: "400", marginBottom: "20px" }}>
-								Jyväskylän Insinööripalvelu Oy
-							</h4>
+      <div
+        className="contact-hero"
+        style={{ backgroundImage: `url(${backgroundImage})` }}
+      />
 
-							<p>
-								Kirrintie 11
-								<br />
-								40270 Jyväskylä
-							</p>
+      <div className="contact-section">
+        <Container>
+          <Row className="g-4">
+            <Col md={6}>
+              <Card className="contact-card">
+                <Card.Body>
+                  <h4 className="mb-4">Jyväskylän Insinööripalvelu Oy</h4>
 
-							<p>etunimi.sukunimi@jipa.fi</p>
+                  <p>
+                    <FaMapMarkerAlt className="icon" /> Kirrintie 11<br />
+                    40270 Jyväskylä
+                  </p>
 
-							<p>
-								<Link to="/employees">Puhelinnumerot henkilöittäin</Link>
-							</p>
-						</Col>
+                  <p>
+                    <FaEnvelope className="icon" /> etunimi.sukunimi@jipa.fi
+                  </p>
 
-						<Col md={6}>
-							<h4 style={{ fontWeight: "400", marginBottom: "20px" }}>Laskutus</h4>
+                  <p>
+                    <FaPhone className="icon" /> 
+                    <Link to="/employees">Puhelinnumerot henkilöittäin</Link>
+                  </p>
+                </Card.Body>
+              </Card>
+            </Col>
 
-							<p>
-								Verkkolaskutusosoite
-								<br />
-								003734999895
-							</p>
+            <Col md={6}>
+              <Card className="contact-card">
+                <Card.Body>
+                  <h4 className="mb-4">Laskutus</h4>
 
-							<p>
-								Välittäjän nimi
-								<br />
-								Apix Messaging Oy
-							</p>
+                  <p>
+                    <FaFileInvoice className="icon" />
+                    <strong> Verkkolaskutusosoite</strong>
+                    <br />
+                    003734999895
+                  </p>
 
-							<p>
-								Operaattoritunnus
-								<br />
-								003723327487
-							</p>
+                  <p>
+                    <strong>Välittäjä</strong>
+                    <br />
+                    Apix Messaging Oy
+                  </p>
 
-							<p>
-								Maksuehto
-								<br />
-								30 pv tai sopimuksen mukaan
-							</p>
-						</Col>
-					</Row>
-				</Container>
-			</div>
-		</div>
-	);
-}
+                  <p>
+                    <strong>Operaattoritunnus</strong>
+                    <br />
+                    003723327487
+                  </p>
+
+                  <p>
+                    <strong>Maksuehto</strong>
+                    <br />
+                    30 pv tai sopimuksen mukaan
+                  </p>
+                </Card.Body>
+              </Card>
+            </Col>
+          </Row>
+        </Container>
+      </div>
+	</div>
+)}

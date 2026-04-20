@@ -49,66 +49,97 @@
 
 .card {
 	border: none;
-	transition:
-		transform 0.2s,
-		box-shadow 0.2s;
 }
 
 .service-card {
 	border: none;
 	padding: 15px;
-	transition:
-		transform 0.2s,
-		box-shadow 0.2s;
+}
+
+.contact-hero {
+  height: 320px;
+  background-size: cover;
+  background-position: center 20%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.contact-title {
+  font-size: 48px;
+  font-weight: 300;
+  letter-spacing: 3px;
+}
+
+.contact-section {
+  background: linear-gradient(to bottom, #f8f9fa, #ffffff);
+  padding: 80px 0;
 }
 
 .contact-card {
-	background-color: rgba(0, 0, 0, 0.5);
-	color: #ffffff;
-	transition:
-		transform 0.2s,
-		box-shadow 0.2s;
+  border: none;
+  border-radius: 16px;
+  padding: 20px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+}
+
+.icon {
+  margin-right: 10px;
+  color: #8042d1;
+}
+
+.contact-card p {
+  margin-bottom: 16px;
 }
 
 .contact-card a {
-	color: #ffffff;
-	text-decoration: underline;
+  color: #8042d1;
+  border-bottom: none;
+  font-weight: 500;
+}
+
+.project-card {
+	position: relative;
+	border-radius: 1rem;
+	overflow: hidden;
+}
+
+.project-card-image-wrapper {
+	position: relative;
+	overflow: hidden;
+}
+
+.project-card-badge {
+	position: absolute;
+	top: 1rem;
+	left: -30%;
+	width: 160%;
+	padding: 0.5rem 1rem;
+	background-color: #8042d1;
+	color: #fff;
+	font-size: clamp(0.75rem, 0.9rem + 0.2vw, 1rem);
+	font-weight: 700;
+	transform: rotate(-15deg);
+	transform-origin: center;
+	text-align: center;
+	white-space: nowrap;
+	overflow: visible;
+	z-index: 2;
 }
 
 .list-group {
 	border: none;
 }
 
-.project-card {
-	cursor: pointer;
-	border-radius: 1rem;
-	overflow: hidden;
-	transition:
-		transform 0.25s ease,
-		box-shadow 0.25s ease;
-}
-
-.project-card:hover {
-	transform: translateY(-4px);
-	box-shadow: 0 18px 40px rgba(0, 0, 0, 0.08);
-}
-
 .project-card-image {
-	height: 220px;
+	height: 330px;
 	object-fit: cover;
 	background-color: #f8f9fa;
 }
 
 .project-card-title {
 	letter-spacing: 0.02em;
-}
-
-.project-card-description {
-	display: -webkit-box;
-	-webkit-line-clamp: 3;
-	line-clamp: 3;
-	-webkit-box-orient: vertical;
-	overflow: hidden;
 }
 
 .project-card-action {
