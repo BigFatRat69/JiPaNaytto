@@ -1,67 +1,69 @@
-import { Container, Card, Row, Col } from "react-bootstrap";
+import { Container, Card, Row, Col, Carousel } from "react-bootstrap";
 
 export default function Services() {
 	return (
 		<div className="section-white">
 			<Container>
-				<h2 className="mb-4 text-center purple-font">Palvelutarjonta</h2>
+				<h2 className="mb-4 text-center purple-font">Palvelumme</h2>
 				<Row>
 					<Col xs={12} md={6} lg={4} className="mb-4 p-2">
-						<Card>
+						<Card className="service-card">
 							<Card.Img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQYxUPP8UU7hjiq72DFCNk-6oPtrz8okGvhhg&s" />
-							<Card.Title>Placeholder</Card.Title>
+							<Card.Title>Rakennuttaminen ja valvonta</Card.Title>
 							<Card.Text>
 								Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed magna erat,
-								auctor a fringilla ut, consectetur non felis. Sed lacinia nunc ac enim
-								ultrices vulputate. Nunc tempus lectus mattis nisl molestie, et
-								tincidunt tortor laoreet. Donec mattis justo orci, elementum ullamcorper
-								tellus dictum nec. Maecenas tincidunt hendrerit est. Morbi purus odio,
-								sollicitudin eu varius vel, pretium a ligula. Sed hendrerit elit in eros
-								molestie tincidunt. Nullam pellentesque ligula dui, eget vulputate elit
-								facilisis rutrum. Sed vitae imperdiet felis. Praesent auctor metus
-								metus, tristique sagittis nisi maximus ut. Maecenas metus elit, molestie
-								ac augue eu, mollis dignissim dolor. Nam non lectus a lorem commodo
-								fringilla. Suspendisse tempus sagittis sapien id placerat. In non felis
-								pellentesque, condimentum leo at, feugiat massa.
+								auctor a fringilla ut, consectetur non felis.
 							</Card.Text>
 						</Card>
 					</Col>
 					<Col xs={12} md={6} lg={4} className="mb-4 p-2">
-						<Card.Img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQYxUPP8UU7hjiq72DFCNk-6oPtrz8okGvhhg&s" />
-						<Card.Title>Placeholder</Card.Title>
-						<Card.Text>
-							Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed magna erat,
-							auctor a fringilla ut, consectetur non felis. Sed lacinia nunc ac enim
-							ultrices vulputate. Nunc tempus lectus mattis nisl molestie, et tincidunt
-							tortor laoreet. Donec mattis justo orci, elementum ullamcorper tellus
-							dictum nec. Maecenas tincidunt hendrerit est. Morbi purus odio,
-							sollicitudin eu varius vel, pretium a ligula. Sed hendrerit elit in eros
-							molestie tincidunt. Nullam pellentesque ligula dui, eget vulputate elit
-							facilisis rutrum. Sed vitae imperdiet felis. Praesent auctor metus metus,
-							tristique sagittis nisi maximus ut. Maecenas metus elit, molestie ac
-							augue eu, mollis dignissim dolor. Nam non lectus a lorem commodo
-							fringilla. Suspendisse tempus sagittis sapien id placerat. In non felis
-							pellentesque, condimentum leo at, feugiat massa.
-						</Card.Text>
+						<Card className="service-card">
+							<Card.Img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQYxUPP8UU7hjiq72DFCNk-6oPtrz8okGvhhg&s" />
+							<Card.Title>Projektinjohto</Card.Title>
+							<Card.Text>
+								Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed magna erat,
+								auctor a fringilla ut, consectetur non felis.
+							</Card.Text>
+						</Card>
 					</Col>
 					<Col xs={12} md={6} lg={4} className="mb-4 p-2">
-						<Card.Img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQYxUPP8UU7hjiq72DFCNk-6oPtrz8okGvhhg&s" />
-						<Card.Title>Placeholder</Card.Title>
-						<Card.Text>
-							Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed magna erat,
-							auctor a fringilla ut, consectetur non felis. Sed lacinia nunc ac enim
-							ultrices vulputate. Nunc tempus lectus mattis nisl molestie, et tincidunt
-							tortor laoreet. Donec mattis justo orci, elementum ullamcorper tellus
-							dictum nec. Maecenas tincidunt hendrerit est. Morbi purus odio,
-							sollicitudin eu varius vel, pretium a ligula. Sed hendrerit elit in eros
-							molestie tincidunt. Nullam pellentesque ligula dui, eget vulputate elit
-							facilisis rutrum. Sed vitae imperdiet felis. Praesent auctor metus metus,
-							tristique sagittis nisi maximus ut. Maecenas metus elit, molestie ac
-							augue eu, mollis dignissim dolor. Nam non lectus a lorem commodo
-							fringilla. Suspendisse tempus sagittis sapien id placerat. In non felis
-							pellentesque, condimentum leo at, feugiat massa.
-						</Card.Text>
+						<Card className="service-card">
+							<Card.Img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQYxUPP8UU7hjiq72DFCNk-6oPtrz8okGvhhg&s" />
+							<Card.Title>Rakenne- ja elementtisuunnittelu</Card.Title>
+							<Card.Text>
+								Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed magna erat,
+								auctor a fringilla ut, consectetur non felis.
+							</Card.Text>
+						</Card>
 					</Col>
+				</Row>
+				<Row>
+					<Carousel data-bs-theme="dark">
+						<Carousel.Item>
+							<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQYxUPP8UU7hjiq72DFCNk-6oPtrz8okGvhhg&s"/>
+							<Carousel.Caption><h3>Konepajasuunnittelu</h3></Carousel.Caption>
+						</Carousel.Item>
+						<Carousel.Item>
+							<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQYxUPP8UU7hjiq72DFCNk-6oPtrz8okGvhhg&s"/>
+							<Carousel.Caption><h3>Rakennesuunnitelmien kolmannen osapuolten tarkastus</h3></Carousel.Caption>
+						</Carousel.Item>
+						<Carousel.Item>
+							<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQYxUPP8UU7hjiq72DFCNk-6oPtrz8okGvhhg&s"/>
+							<Carousel.Caption><h3>Uudis- ja korjausrakennuttaminen</h3></Carousel.Caption>
+						</Carousel.Item>
+						<Carousel.Item>
+							<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQYxUPP8UU7hjiq72DFCNk-6oPtrz8okGvhhg&s"/>
+							<Carousel.Caption><h3>Työmaavalvonta</h3></Carousel.Caption>
+						</Carousel.Item>
+						<Carousel.Item>
+							<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQYxUPP8UU7hjiq72DFCNk-6oPtrz8okGvhhg&s"/>
+							<Carousel.Caption><h3>Kosteudenhallinta- ja turvallisuuskoordinaattorin tehtävät</h3></Carousel.Caption>
+						</Carousel.Item>
+						<Carousel.Item>
+							<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQYxUPP8UU7hjiq72DFCNk-6oPtrz8okGvhhg&s"/>
+							<Carousel.Caption><h3>Takuuajan tarkastukset</h3></Carousel.Caption>
+						</Carousel.Item>
+					</Carousel>
 				</Row>
 			</Container>
 		</div>
