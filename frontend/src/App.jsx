@@ -19,15 +19,15 @@ export default function App() {
 					</Navbar.Brand>
 					<Navbar.Toggle aria-controls="basic-navbar-nav" />
 					<Navbar.Collapse id="basic-navbar-nav">
-						<Nav className="me-auto" variant="underline">
+						<Nav className="ms-auto" variant="underline">
 							<Nav.Link as={NavLink} to="/" className="purple-font">
 								Etusivu
 							</Nav.Link>
 							<Nav.Link as={NavLink} to="/employees" className="purple-font">
-								Henkilöt
+								Tiimimme
 							</Nav.Link>
 							<Nav.Link as={NavLink} to="/projects" className="purple-font">
-								Projektit
+								Referenssit
 							</Nav.Link>
 							<Nav.Link as={NavLink} to="/contact" className="purple-font">
 								Yhteystiedot
