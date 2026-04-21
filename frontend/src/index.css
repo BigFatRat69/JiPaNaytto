@@ -112,17 +112,17 @@
 
 .project-card-badge {
 	position: absolute;
-	top: 1rem;
+	top: 0.5rem;
 	left: -30%;
 	width: 160%;
-	padding: 0.5rem 1rem;
+	padding: 0.5rem 1rem 0.5rem 45%;
 	background-color: #8042d1;
 	color: #fff;
 	font-size: clamp(0.75rem, 0.9rem + 0.2vw, 1rem);
 	font-weight: 700;
-	transform: rotate(-15deg);
+	transform: rotate(-10deg);
 	transform-origin: center;
-	text-align: center;
+	text-align: left;
 	white-space: nowrap;
 	overflow: visible;
 	z-index: 2;
@@ -139,31 +139,18 @@
 }
 
 .project-card-title {
+	position: relative;
 	letter-spacing: 0.02em;
 }
 
-.project-card-action {
-	font-weight: 600;
-	letter-spacing: 0.01em;
-}
-
-.project-modal-image {
-	width: 100%;
-	height: auto;
-	border-radius: 0.75rem;
-	margin-bottom: 1rem;
-	object-fit: contain;
-	background-color: #f8f9fa;
-}
-
-.project-modal-body p {
-	margin-bottom: 0;
-	color: #495057;
-	line-height: 1.7;
-}
-
-.project-modal-footer .btn-secondary {
-	border: none;
+.project-card-title::after {
+	content: "";
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	width: 12.5%;
+	height: 3px;
+	background-color: #8042d1;
 }
 
 div {

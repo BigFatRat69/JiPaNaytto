@@ -11,6 +11,7 @@ export default function Projects() {
       _id,
       name,
       description,
+	  category,
       "imageUrl": photo.asset->url
     }`;
 

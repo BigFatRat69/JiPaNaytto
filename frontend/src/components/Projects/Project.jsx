@@ -6,7 +6,7 @@ export default function Project({ pro }) {
 		<>
 			<Card className="h-100 shadow-sm border-0 project-card">
 				<div className="project-card-image-wrapper">
-					<span className="project-card-badge">rakenne- ja elementtisuunnittelu</span>
+					<span className="project-card-badge">{pro.category}</span>
 					<Card.Img
 						variant="top"
 						src={pro.imageUrl}
