@@ -1,113 +1,117 @@
 * {
-	font-family: "Helvetica Neue", Arial, sans-serif;
+    font-family: "Helvetica Neue", Arial, sans-serif;
 }
 
 .contact-bg-div {
-	background-attachment: fixed;
-	background-size: cover;
-	background-position: center;
-	height: 300px;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	color: white;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
 }
 
 .card-text-small {
-	font-size: 15px;
+    font-size: 15px;
 }
 
 .card-text-large {
-	font-size: 20px;
+    font-size: 20px;
 }
 
 .employee-card-image {
-	width: 20rem;
-	height: 13rem;
-	object-fit: contain;
-	padding-left: 1px;
-	padding-right: 3px;
-	padding-top: 1px;
-	padding-bottom: 1px;
+    width: 20rem;
+    height: 13rem;
+    object-fit: contain;
+    padding-left: 1px;
+    padding-right: 3px;
+    padding-top: 1px;
+    padding-bottom: 1px;
 }
 
 .brand-logo {
-	border-bottom: none !important;
-	box-shadow: none !important;
+    border-bottom: none !important;
+    box-shadow: none !important;
 }
 
 .section-light {
-	background-color: #f8f9fa;
-	padding: 100px 0;
-	position: relative;
+    background-color: #f8f9fa;
+    padding: 100px 0;
+    position: relative;
 }
 
 .section-white {
-	background-color: #ffffff;
-	padding: 100px 0;
+    background-color: #ffffff;
+    padding: 100px 0;
 }
 
 .card {
-	border: none;
+    border: none;
 }
 
 .service-card {
-	border: none;
-	padding: 15px;
+    border: none;
+    padding: 15px;
+    background-color: rgba(168, 104, 252, 0.2);
+    padding: 2rem;
+    padding-bottom: 5rem;
+    gap: 1rem;
 }
 
 .contact-hero {
-  height: 320px;
-  background-size: cover;
-  background-position: center 20%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  position: relative;
+    height: 320px;
+    background-size: cover;
+    background-position: center 20%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
 }
 
 .contact-title {
-  font-size: 48px;
-  font-weight: 300;
-  letter-spacing: 3px;
+    font-size: 48px;
+    font-weight: 300;
+    letter-spacing: 3px;
 }
 
 .contact-section {
-  background: linear-gradient(to bottom, #f8f9fa, #ffffff);
-  padding: 80px 0;
+    background: linear-gradient(to bottom, #f8f9fa, #ffffff);
+    padding: 80px 0;
 }
 
 .contact-card {
-  border: none;
-  border-radius: 16px;
-  padding: 20px;
-  box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+    border: none;
+    border-radius: 16px;
+    padding: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
 }
 
 .icon {
-  margin-right: 10px;
-  color: #8042d1;
+    margin-right: 10px;
+    color: #8042d1;
 }
 
 .contact-card p {
-  margin-bottom: 16px;
+    margin-bottom: 16px;
 }
 
 .contact-card a {
-  color: #8042d1;
-  border-bottom: none;
-  font-weight: 500;
+    color: #8042d1;
+    border-bottom: none;
+    font-weight: 500;
 }
 
 .project-card {
-	position: relative;
-	border-radius: 1rem;
-	overflow: hidden;
+    position: relative;
+    border-radius: 1rem;
+    overflow: hidden;
 }
 
 .project-card-image-wrapper {
-	position: relative;
-	overflow: hidden;
+    position: relative;
+    overflow: hidden;
 }
 
 .project-card-badge {
@@ -129,13 +133,13 @@
 }
 
 .list-group {
-	border: none;
+    border: none;
 }
 
 .project-card-image {
-	height: 330px;
-	object-fit: cover;
-	background-color: #f8f9fa;
+    height: 330px;
+    object-fit: cover;
+    background-color: #f8f9fa;
 }
 
 .project-card-title {
@@ -154,57 +158,78 @@
 }
 
 div {
-	font-size: 20px;
+    font-size: 20px;
 }
 
 h1 {
-	font-family: "Helvetica Neue", Arial, sans-serif;
-	font-weight: 600;
-	margin-bottom: 40px;
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-weight: 600;
+    margin-bottom: 40px;
 }
 
 h2 {
-	font-weight: 500;
-	margin-bottom: 30px;
-	text-align: center;
+    font-weight: 500;
+    margin-bottom: 30px;
+    text-align: center;
 }
 
 h4 {
-	font-weight: 400;
-	margin-bottom: 20px;
+    font-weight: 400;
+    margin-bottom: 20px;
 }
 
 p {
-	color: #212529;
-	font-size: 1.05rem;
-	line-height: 1.6;
+    color: #212529;
+    font-size: 1.05rem;
+    line-height: 1.6;
 }
 
 ul {
-	padding-left: 18px;
+    padding-left: 18px;
 }
 
 li {
-	margin-bottom: 6px;
+    margin-bottom: 6px;
 }
 
 a {
-	text-decoration: none;
-	border-bottom: 1px solid black;
-	color: black;
+    text-decoration: none;
+    border-bottom: 1px solid black;
+    color: black;
 }
 
 a:hover {
-	opacity: 0.6;
+    opacity: 0.6;
 }
 
 .purple-font {
-	color: #8042d1 !important;
+    color: #8042d1 !important;
 }
 
 .employees-title-container {
-	padding-left: 1rem;
-	padding-right: 1rem;
-	padding-top: 4rem;
-	padding-bottom: 10rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-top: 4rem;
+    padding-bottom: 10rem;
+}
+
+h3 {
+    color: #212529;
+    font-size: 200%;
+}
+
+.carousel-image {
+    width: 100rem;
+    height: 15rem;
+}
+
+.homepage-banner {
+    width: 100rem;
+    height: 30rem;
+    object-fit: cover;
+}
+
+.homepage-banner-container {
+    padding-top: 4rem;
+    padding-bottom: 4rem;
 }
