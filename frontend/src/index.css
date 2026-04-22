@@ -18,12 +18,12 @@
 }
 
 .card-text-large {
-    font-size: 20px;
+    font-size: 25px;
 }
 
 .employee-card-image {
     width: 20rem;
-    height: 13rem;
+    height: 25rem;
     object-fit: contain;
     padding-left: 1px;
     padding-right: 3px;
@@ -229,7 +229,40 @@ h3 {
     object-fit: cover;
 }
 
-.homepage-banner-container {
+.employee-card-action {
+	font-weight: 600;
+	letter-spacing: 0.01em;
+}
+
+.employee-modal-image {
+	width: 100%;
+	height: 50rem;
+	border-radius: 0.75rem;
+	margin-bottom: 1rem;
+	object-fit: contain;
+	background-color: #f8f9fa;
+}
+
+.employee-modal-body p {
+	margin-bottom: 0;
+	color: #495057;
+	line-height: 1.7;
+}
+
+.employee-modal-footer .btn-secondary {
+	border: none;
+}
+
+.employee-banner-container {
     padding-top: 4rem;
     padding-bottom: 4rem;
+}
+
+
+.employee-description {
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
 }
