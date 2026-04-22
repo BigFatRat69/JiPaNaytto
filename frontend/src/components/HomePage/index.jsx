@@ -10,7 +10,7 @@ export default function HomePage() {
 					<Col>
 						<h1 className="mb-4 purple-font">Jyväskylän Insinööripalvelu Oy</h1>
 					</Col>
-					<Row className="homepage-banner-container section-light">
+					<Row className="homepage-banner-container section-white">
 						<img
 							className="homepage-banner"
 							src="https://upload.wikimedia.org/wikipedia/commons/c/cc/Jyv%C3%A4skyl%C3%A4_-_Ainola.jpg"

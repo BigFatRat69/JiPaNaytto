@@ -37,7 +37,7 @@ export default function Services() {
 						</Card>
 					</Col>
 				</Row>
-				<h2>Lisäksi tarjoamme:</h2>
+				<h2>Lisäksi palveluissamme:</h2>
 				<Row>
 					<Carousel data-bs-theme="dark" fade>
 						<Carousel.Item>
