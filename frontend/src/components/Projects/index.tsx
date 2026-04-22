@@ -24,7 +24,7 @@ export default function Projects() {
 		<Container>
 			<Row>
 				{projects.map((pro: any) => (
-					<Col key={pro._id} xs={12} md={6} lg={6} className="mb-4 p-2">
+					<Col key={pro._id} xs={12} md={4} lg={4} className="mb-4 p-2">
 						<Project pro={pro} />
 					</Col>
 				))}

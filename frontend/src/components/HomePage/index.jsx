@@ -6,6 +6,11 @@ export default function HomePage() {
         <>
             <div>
                 <Container>
+                        <Col>
+                            <h1 className="mb-4 purple-font">
+                                Jyväskylän Insinööripalvelu Oy
+                            </h1>
+                        </Col>
                     <Row className="homepage-banner-container section-light">
                         <img
                             className="homepage-banner"
@@ -13,11 +18,6 @@ export default function HomePage() {
                         />
                     </Row>
                     <Row>
-                        <Col>
-                            <h1 className="mb-4 purple-font">
-                                Jyväskylän Insinööripalvelu Oy
-                            </h1>
-                        </Col>
                         <Col>
                             <Card>
                                 <Card.Body>
