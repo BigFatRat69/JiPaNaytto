@@ -7,7 +7,8 @@ export default function Employees() {
 	const [employees, setEmployees] = useState([]);
 
 	useEffect(() => {
-		const query = `*[_type == "employee"]{
+		const query = `*[_type == "employee"] | order(_createdAt asc){
+	  _createdAt,
       _id,
       name,
       description,
