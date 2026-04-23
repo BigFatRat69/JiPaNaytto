@@ -5,20 +5,39 @@ import { Container, Row, Col } from "react-bootstrap";
 
 export default function Projects() {
 	const [projects, setProjects] = useState([]);
+	const [error, setError] = useState<string | null>(null);
+	const [loading, setLoading] = useState(true);
 
 	useEffect(() => {
 		const query = `*[_type == "project"]{
-      _id,
-      name,
-      description,
-	  category,
-      "imageUrl": photo.asset->url
-    }`;
+			_id,
+			name,
+			description,
+			category,
+			"imageUrl": photo.asset->url
+		}`;
 
-		client.fetch(query).then((data) => {
-			setProjects(data);
-		});
+		client
+			.fetch(query)
+			.then((data) => {
+				setProjects(data);
+			})
+			.catch((err) => {
+				console.error(err);
+				setError("Failed to load projects.");
+			})
+			.finally(() => {
+				setLoading(false);
+			});
 	}, []);
+
+	if (loading) {
+		return <p>Loading...</p>;
+	}
+
+	if (error) {
+		return <p>{error}</p>;
+	}
 
 	return (
 		<Container>

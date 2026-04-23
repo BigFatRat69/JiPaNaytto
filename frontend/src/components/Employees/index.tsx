@@ -4,23 +4,46 @@ import Employee from "./Employee";
 import { Container, Col, Row } from "react-bootstrap";
 
 export default function Employees() {
-	const [employees, setEmployees] = useState([]);
+	const [employees, setEmployees] = useState<any[]>([]);
+	const [error, setError] = useState<string | null>(null);
+	const [loading, setLoading] = useState(true);
 
 	useEffect(() => {
 		const query = `*[_type == "employee"] | order(_createdAt asc){
-	  _createdAt,
-      _id,
-      name,
-      description,
-      "imageUrl": photo.asset->url,
-	  role,
-	  contacts,
-    }`;
+			_createdAt,
+			_id,
+			name,
+			description,
+			"imageUrl": photo.asset->url,
+			role,
+			contacts,
+		}`;
 
-		client.fetch(query).then((data) => {
-			setEmployees(data);
-		});
+		client
+			.fetch(query)
+			.then((data) => {
+				setEmployees(data);
+			})
+			.catch((err: unknown) => {
+				console.error(err);
+				setError("Failed to load employees.");
+			})
+			.finally(() => {
+				setLoading(false);
+			});
 	}, []);
+
+	if (loading) {
+		return <p>Loading...</p>;
+	}
+
+	if (error) {
+		return <p>{error}</p>;
+	}
+
+	if (!employees.length) {
+		return <p>No employees found.</p>;
+	}
 
 	return (
 		<>
@@ -38,6 +61,7 @@ export default function Employees() {
 					</h5>
 				</Row>
 			</Container>
+
 			<Container>
 				<Row>
 					{employees.map((emp: any) => (
