@@ -17,9 +17,6 @@ export default function HomePage() {
 							className="homepage-banner"
 							style={{
 								backgroundImage: `url(${banner})`,
-								backgroundSize: "cover",
-								backgroundPosition: "center",
-								backgroundAttachment: "fixed",
 							}}
 						/>
 					</Row>
