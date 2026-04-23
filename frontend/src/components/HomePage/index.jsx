@@ -2,18 +2,25 @@ import { Container, Card, Col, Row } from "react-bootstrap";
 import Services from "./services";
 import banner from "../../assets/kaupunkikuva.png";
 
+//const homepageBanner = "https://upload.wikimedia.org/wikipedia/commons/c/cc/Jyv%C3%A4skyl%C3%A4_-_Ainola.jpg"
+
 export default function HomePage() {
 	return (
 		<>
 			<div>
 				<Container>
 					<Col>
-						<h1 className="mb-4 purple-font">Jyväskylän Insinööripalvelu Oy</h1>
+						<h1 className="mb-4 purple-font text-center">Jyväskylän Insinööripalvelu Oy</h1>
 					</Col>
 					<Row className="homepage-banner-container section-white">
-						<img
+						<div
 							className="homepage-banner"
-							src="https://upload.wikimedia.org/wikipedia/commons/c/cc/Jyv%C3%A4skyl%C3%A4_-_Ainola.jpg"
+							style={{
+								backgroundImage: `url(${banner})`,
+								backgroundSize: "cover",
+								backgroundPosition: "center",
+								backgroundAttachment: "fixed",
+							}}
 						/>
 					</Row>
 					<Row>

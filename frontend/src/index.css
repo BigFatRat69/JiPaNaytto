@@ -252,9 +252,11 @@ h3 {
 }
 
 .homepage-banner {
-	width: 100rem;
-	height: 20rem;
-	object-fit: cover;
+  width: 100%;
+  height: 25rem;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
 }
 
 .employee-card-action {
@@ -385,4 +387,5 @@ h3 {
 	color: #5a6c7d;
 	line-height: 1.6;
 	font-size: 0.95rem;
+
 }
