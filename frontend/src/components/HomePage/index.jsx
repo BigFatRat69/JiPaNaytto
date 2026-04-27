@@ -1,5 +1,5 @@
 import { Container, Card, Col, Row } from "react-bootstrap";
-import Services from "./services";
+import Services from "./Services";
 import banner from "../../assets/kaupunkikuva.png";
 
 //const homepageBanner = "https://upload.wikimedia.org/wikipedia/commons/c/cc/Jyv%C3%A4skyl%C3%A4_-_Ainola.jpg"
